@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.neo.satya.to_doweekly.MainActivity"
+    android:background="@color/base"
+    android:id="@+id/mainLayout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/li">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l1"
+        android:layout_above="@+id/l2">
+    <ListView
+        android:id="@+id/listView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:dividerHeight="5dp"
+        android:divider="@color/base"
+        android:drawSelectorOnTop="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/l2"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:id="@+id/todayBtn"
+            android:onClick="todayList"
+            android:text="Today"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/dateto44"
+            android:layout_marginLeft="80dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:id="@+id/homeBtn"
+            android:onClick="allDayList"
+            android:textColor="@color/white"
+            android:text="All Days"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/alldays"
+            android:layout_marginLeft="70dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--   <include layout="@layout/content_main" /> -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:src="@drawable/plus_40"
+        app:backgroundTint="@color/colorAccent"/>
+
+</android.support.design.widget.CoordinatorLayout>

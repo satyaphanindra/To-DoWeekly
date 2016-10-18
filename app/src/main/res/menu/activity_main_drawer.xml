@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeAll"
+            android:icon="@drawable/calendar44"
+            android:title="All Weeks" />
+        <item android:title="This Week">
+            <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/sun"
+                android:icon="@drawable/sun"
+                android:title="Sunday" />
+            <item
+            android:id="@+id/mon"
+            android:icon="@drawable/mon"
+            android:title="Monday" />
+        <item
+            android:id="@+id/tue"
+            android:icon="@drawable/tue"
+            android:title="Tuesday" />
+        <item
+            android:id="@+id/wed"
+            android:icon="@drawable/wed"
+            android:title="Wednesday" />
+        <item
+            android:id="@+id/thu"
+            android:icon="@drawable/thu"
+            android:title="Thursday" />
+        <item
+            android:id="@+id/fri"
+            android:icon="@drawable/fri"
+            android:title="Friday" />
+        <item
+            android:id="@+id/sat"
+            android:icon="@drawable/sat"
+            android:title="Saturday" />
+
+    </group>
+
+        </menu>
+        </item>
+    </group>
+
+    <item android:title="More Info">
+        <menu>
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/question"
+                android:title="Help" />
+            <item
+                android:id="@+id/email"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

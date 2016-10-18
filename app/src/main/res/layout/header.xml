@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp"
+    android:padding="12dp"
+    android:background="@drawable/rounded_corner">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Day"
+        android:id="@+id/dayHeader"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:textColor="@color/blueDark"/>
+
+    <TextView
+        android:id="@+id/dateHeader"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date"
+        android:textColor="@color/blueDark" />
+
+</LinearLayout>

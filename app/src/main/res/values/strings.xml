@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">To-Do Weekly</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="description_hint">Description here...</string>
+    <string name="heading_hint">Title here...</string>
+    <string name="Save">Save</string>
+    <string name="date_time"><![CDATA[Date & Time:]]></string>
+    <string name="Delete">Delete</string>
+    <string name="UnderConstruction">Under Construction</string>
+    <string name="version">1.0</string>
+</resources>

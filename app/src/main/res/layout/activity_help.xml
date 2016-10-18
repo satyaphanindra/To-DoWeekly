@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/base">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liEdit"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="About 'To-Do Weekly'"
+            android:id="@+id/headText"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner_white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headText"
+            android:text="Thank you for downloading To-Do Weekly Android Application.\n\nYou can save your To-Do lists for all calendar days and never forget to accomplish your day to day goals. \n\nThe app itself updates you with current day tasks. End of every week i.e., on Sunday the app gets ready with new goals that you saved for the coming week.\n\nThe simple and easy UI gives you clutter free and clear picture of your goals each and every day separately for the entire week, So you know where you are.\n\nYou will also get notifications about your pending tasks of current day, one in the morning and another in the evening, So you can track your tasks."
+            android:background="@drawable/rounded_corner_white"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:inputType="textMultiLine"
+            android:id="@+id/textV"/>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
