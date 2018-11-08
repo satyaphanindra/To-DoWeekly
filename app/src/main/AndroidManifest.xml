@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.neo.satya.to_doweekly"
-    android:versionName="@string/version" android:versionCode="10">
+    package="com.us.satya.to_doweekly"
+    android:versionName="@string/version" android:versionCode="21150">
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-sdk android:minSdkVersion="16"
         android:targetSdkVersion="23"
-        android:maxSdkVersion="24" />
+        android:maxSdkVersion="25" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreen"
+            android:name="com.us.satya.to_doweekly.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name="com.neo.satya.to_doweekly.MainActivity"
+            android:name="com.us.satya.to_doweekly.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">
@@ -31,14 +31,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.neo.satya.to_doweekly.EditDetailActivity"
+            android:name="com.us.satya.to_doweekly.EditDetailActivity"
             android:noHistory="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.neo.satya.to_doweekly.DetailActivity"
+            android:name="com.us.satya.to_doweekly.DetailActivity"
             android:noHistory="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
@@ -46,7 +46,7 @@
             >
         </activity>
         <activity
-            android:name="com.neo.satya.to_doweekly.helpers.HelpActivity"
+            android:name="com.us.satya.to_doweekly.helpers.HelpActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
@@ -56,11 +56,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.neo.satya.to_doweekly.receivers.NotifierService"
+        <service android:name="com.us.satya.to_doweekly.receivers.NotifierService"
             android:enabled="true" />
 
-        <receiver android:name="com.neo.satya.to_doweekly.receivers.StartServiceReceiver"/>
-        <receiver android:name="com.neo.satya.to_doweekly.receivers.StartReceiver">
+        <receiver android:name="com.us.satya.to_doweekly.receivers.StartServiceReceiver"/>
+        <receiver android:name="com.us.satya.to_doweekly.receivers.StartReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>

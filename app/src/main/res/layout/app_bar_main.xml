@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.neo.satya.to_doweekly.MainActivity"
+    tools:context="com.us.satya.to_doweekly.MainActivity"
     android:background="@color/base"
     android:id="@+id/mainLayout">
 
